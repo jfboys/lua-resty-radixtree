@@ -105,6 +105,8 @@ end
 
 ffi_cdef[[
     int memcmp(const void *s1, const void *s2, size_t n);
+    
+    void free(void *ptr);
 
     void *radix_tree_new();
     int radix_tree_destroy(void *t);
